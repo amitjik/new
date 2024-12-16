@@ -7,6 +7,7 @@ COPY --chown=1001:root target/*-runner /work/application
 
 EXPOSE 8080
 USER 1001
+RUN echo "heelo to Amit Kumar"
 
 RUN echo "Hello AMIT"
 ENTRYPOINT ["./application", "-Dquarkus.http.host=0.0.0.0"]
